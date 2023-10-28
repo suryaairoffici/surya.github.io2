@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition:  background-color, border-radius 1s;
+        }
+        button:hover {
+            background-color: blueviolet;
+            border-radius: 1px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NGAPAIN MASUK SINI, CEMUY???</h1>
+        <h2>Balik nih</h2>
+        <button class="button" onclick="balik()">BALIK</button>
+    </div>
+    <script>
+        function balik() {
+            location.replace("login.html")
+        }
+    </script>
+</body>
+</html>

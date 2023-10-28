@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        .tabcontent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Login" class="tabcontent">
+    <h2>Login</h2>
+    <form onsubmit="checkLogin(); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div id="Welcome" class="tabcontent">
+    <h2>Welcome</h2>
+    <p>You are logged in!</p>
+</div>
+
+<script>
+function checkLogin() {
+    var name = document.getElementById("name").value;
+    var password = document.getElementById("password").value;
+
+    if (name === "Elvira" && password === "Cemuy") {
+        document.getElementById("Login").style.display = "none";
+        document.getElementById("Welcome").style.display = "block";
+    } else {
+        alert("Invalid credentials. Please try again.");
+    }
+}
+</script>
+
+</body>
+</html>

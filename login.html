@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNTUK ELVIRA</title>
+    <link href="https://fonts.googleapis.com/css2 family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src='script.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Login Dulu</h2>
+            <form onsubmit="auth(); return false;">
+                <div class="input-group">
+                    <label for="text">Cemuy namanya ciapa?</label>
+                    <input type="text" id="text" name="text" placeholder="nama kamu" required />
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label> 
+                    <input type="password" id="password" name="password" placeholder="password" required />
+                </div>
+                <a href="login beneran.html" class="forgot-password">Lupa passwordnya?</a>
+                <div class="input-group">
+                    <button type="submit" value="submit" onclick="auth()">Login</button>
+                </div>
+            </form>
+            <div class="google-login">
+                <a href="kalogoogle.html"> <img src="https://th.bing.com/th/id/R.0fa3fe04edf6c0202970f2088edea9e7?rik=joOK76LOMJlBPw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fgoogle-logo-png-open-2000.png&ehk=0PJJlqaIxYmJ9eOIp9mYVPA4KwkGo5Zob552JPltDMw%3d&risl=&pid=ImgRaw&r=0" alt="Login dengan Google"/> Masuk dengan Google </a>
+            </div>
+        </div>
+    </div>
+    <script>
+    function auth() {
+        var text = document.getElementById("text").value;
+        var password = document.getElementById("password").value;
+
+        if (text === "Elvira Liani Rulan" && password === "cemuy") {
+            document.getElementById("text");
+            document.getElementById("Welcome");
+            location.replace("login tab2.html");
+    
+        } else if (text === "Cemuy") {
+            alert("Nama asli cuyyy");
+            return;
+        
+        } else{
+            alert("Salah, Cemuy");
+            return;
+        }
+    }
+    </script>
+</body>
+</html>

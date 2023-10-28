@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #66655B;
+}
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom:20px;
+}
+label {
+    display: block;
+    margin-bottom: 0px;
+}
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color, border-radius 1s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-radius: 1px;
+}
+.forgot-password {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.google-login {
+    text-align: center;
+}
+
+.google-login img {
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
